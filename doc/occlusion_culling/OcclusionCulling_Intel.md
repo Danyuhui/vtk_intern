@@ -1,7 +1,3 @@
-vtk可能和遮挡剔除相关的类：vtkVisibilityCuller https://adamdjellouli.com/articles/vtk_examples/07_performance_optimization_and_parallelism
-
-OpenGL中OcclusionCulling类：https://visualizationlibrary.org/documentation/classvl_1_1_occlusion_cull_renderer.html#_details
-
 ### README
 
 The technique used in this sample divides scene objects into occluders and occludees and culls occludees based on a depth comparison with the occluders that are software rasterized to the depth buffer. The sample code uses frustum culling and is optimized with Streaming SIMD Extensions (SSE) and Advanced Vector Extensions (AVX) instruction sets and multi-threading to achieve up to 8X performance speedup compared to a non-culled display of the sample scene.
